@@ -13,7 +13,7 @@ app.get('/', (req, res) => {
 let users = 0;
 
 io.on('connection', (socket) => {
-    users;
+    users++;
 
     io.emit('connection', `User ${users} connected`);
     console.log('user connected');
